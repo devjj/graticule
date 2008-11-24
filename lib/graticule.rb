@@ -1,7 +1,5 @@
 $:.unshift(File.dirname(__FILE__))
 
-require 'extlib'
-
 require 'graticule/version'
 require 'graticule/location'
 require 'graticule/geocoder'

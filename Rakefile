@@ -1,5 +1,4 @@
 require 'rubygems'
-require 'extlib'
 require 'hoe'
 require File.join(File.dirname(__FILE__), 'lib', 'graticule', 'version.rb')
 
