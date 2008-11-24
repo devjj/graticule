@@ -1,5 +1,6 @@
 $:.unshift(File.dirname(__FILE__))
 
+# extlib contains its own blank? method.  We test to see if it is defined in order to decide whether or not to load the ActiveSupport version.
 begin
   ''.blank?
 rescue NoMethodError
@@ -27,4 +28,6 @@ require 'graticule/distance'
 require 'graticule/distance/haversine'
 require 'graticule/distance/spherical'
 require 'graticule/distance/vincenty'
+
+# Loads the copied methods from ActiveSupport that graticule requires.  These were copied from ActiveSupport 2.1.1.
 require 'graticule/active_support_methods'
