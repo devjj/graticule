@@ -1,5 +1,11 @@
 $:.unshift(File.dirname(__FILE__))
 
+begin
+  ''.blank?
+rescue NoMethodError
+  require 'graticule/blank'
+end
+
 require 'graticule/version'
 require 'graticule/location'
 require 'graticule/geocoder'
