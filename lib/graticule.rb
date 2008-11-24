@@ -1,6 +1,6 @@
 $:.unshift(File.dirname(__FILE__))
 
-require 'active_support'
+require 'extlib'
 
 require 'graticule/version'
 require 'graticule/location'
@@ -23,3 +23,4 @@ require 'graticule/distance'
 require 'graticule/distance/haversine'
 require 'graticule/distance/spherical'
 require 'graticule/distance/vincenty'
+require 'graticule/active_support_methods'
