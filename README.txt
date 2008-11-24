@@ -1,5 +1,7 @@
 = Graticule
 
+NOTE: This fork of graticule contains a copy of the ActiveSupport methods that were used by the original plugin, modified to work with the new structure.  This removes the ActiveSupport dependency, making the library freestanding.
+
 Graticule is a geocoding API for looking up address coordinates.  It supports many popular APIs, including Yahoo, Google, Geocoder.ca, Geocoder.us, PostcodeAnywhere and MetaCarta.
 
 = Usage
@@ -26,4 +28,6 @@ Graticule includes a command line interface (CLI).
 
 = Source
 
-The source code for Graticule is available at http://github.com/collectiveidea/graticule. Patches and bug reports are welcome at http://collectiveidea.lighthouseapp.com/projects/20262-graticule
+The original source code for Graticule is available at http://github.com/collectiveidea/graticule. Patches and bug reports are welcome at http://collectiveidea.lighthouseapp.com/projects/20262-graticule
+
+The source for this modified version of graticule is available at http://github.com/devjj/graticule/tree/master
