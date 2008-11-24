@@ -14,7 +14,6 @@ Hoe.new("graticule", Graticule::Version::STRING) do |p|
   p.need_zip = true
   p.test_globs = ['test/**/*_test.rb']
   p.changes = p.paragraphs_of('CHANGELOG.txt', 0..1).join("\n\n")
-  p.extra_deps << ['activesupport']
 end
 
 
